@@ -67,9 +67,11 @@ const FiltersProvider = ({children}) => {
 
                 case 'Price(Lowest First)':
                     updatedProducts = updatedProducts.sort((a, b) => a.finalPrice - b.finalPrice);
+                    break;
 
                 case 'Price(Highest First)':
                     updatedProducts = updatedProducts.sort((a, b) => b.finalPrice - a.finalPrice);
+                    break;
 
                 default:
                     throw new Error('Wrong Option Selected');
